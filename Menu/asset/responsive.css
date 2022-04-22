@@ -1,0 +1,108 @@
+@media (max-width: 1024px) {
+    header {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        max-width: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background:url(./img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .toggle.active {
+        background:url(./img/close.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom:0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255,255,255,1);
+        z-index: 10;
+        font-size: 1.5em;
+        margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        max-width: 40px;
+    top: 1;}
+}
+
+    section {
+        padding: 20px 20px 120px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content__textBox {
+        max-width: 100%;
+    }
+
+    .content__textBox h2 {
+        font-size: 2.5em;
+        margin-bottom: 16px;
+    }
+
+    .circle {
+        clip-path: circle(400px at bottom);
+    }
+
+    .content__img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content__thumb>li img {
+        max-width: 40px;
+    }
+    
+    .content__img img {
+        width: 300px;
+    }
+
+    .content__social {
+        filter: inherit;
+        background: #017143;
+        right: 0;
+        width: 50px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}
